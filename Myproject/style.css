@@ -1,0 +1,109 @@
+  body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ff5e62, #ff9966);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+/* Center login box */
+#loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#loginBox {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00000050;
+  width: 300px;
+  text-align: center;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #fff;
+  color: #ff5e62;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #f1f1f1;
+}
+
+.center-box {
+  margin: 20px auto;
+  width: fit-content;
+  text-align: center;
+}
+
+#busResults, #seatSelection, #paymentSection, #ticketPage {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.available {
+  background-color: white;
+}
+
+.booked {
+  background-color: yellow;
+}
+
+.unbooked {
+  background-color: green;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* QR Code */
+#qrCodeContainer {
+  margin-top: 20px;
+}
+
+#qrCode {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+

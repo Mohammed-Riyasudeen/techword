@@ -1,0 +1,78 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Bus - Book Tickets</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- LOGIN -->
+  <div id="loginContainer">
+    <div id="loginBox">
+      <h2>Login to Your Bus</h2>
+      <input type="email" id="loginId" placeholder="Enter Email ID" required />
+      <input type="password" id="loginPass" placeholder="Enter Password" required />
+      <button onclick="checkLogin()">Login</button>
+      <p id="loginError"></p>
+    </div>
+  </div>
+
+  <!-- MAIN APP -->
+  <div id="mainApp" style="display: none">
+    <div class="header">
+      <h1>Your Bus - Book Your Journey</h1>
+      <button onclick="logout()">Logout</button>
+    </div>
+
+    <!-- Search Section -->
+    <div class="center-box">
+      <input id="from" placeholder="From (e.g. Coimbatore)" />
+      <input id="to" placeholder="To (e.g. Chennai)" />
+      <input id="journeyDate" type="date" />
+      <button onclick="searchBuses()">Search Buses</button>
+    </div>
+
+    <!-- Bus Results -->
+    <div id="busResults" class="center-box"></div>
+
+    <!-- Seat Selection -->
+    <div id="seatSelection" class="center-box"></div>
+
+    <!-- Payment Section -->
+    <div id="paymentSection" class="center-box"></div>
+
+    <!-- View Booking History -->
+    <div class="center-box">
+      <button onclick="viewHistory()">View Booking History</button>
+    </div>
+
+    <!-- Ticket Page -->
+    <div id="ticketPage" class="center-box"></div>
+
+    <!-- QR Code Container -->
+    <div id="qrCodeContainer" class="center-box" style="display: none;">
+      <h3>Scan to Pay</h3>
+      <div id="qrCode">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=yourupi@bank&pn=YourBus&am=1&cu=INR&size=200x200" alt="QR Code to Pay" />
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
